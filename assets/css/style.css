@@ -1,0 +1,255 @@
+/*
+########################################
+                  Global
+########################################
+*/
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../fonts/Graphik-Medium.ttf);
+}
+
+@font-face {
+  font-family: Graphik-Regular;
+  src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+  font-family: Theinhardt;
+  src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+@font-face {
+  font-family: TiemposHeadline;
+  src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.space {
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.graphik-m {
+  font-family: "Graphik-Medium";
+}
+
+.graphik-r {
+  font-family: "Graphik-Regular";
+}
+
+.theinhardt {
+  font-family: "Theinhardt";
+}
+
+.tiempos {
+  font-family: "TiemposHeadline";
+}
+
+/*
+########################################
+                  Header
+########################################
+*/
+
+header,
+ul {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  gap: 1.5rem;
+}
+
+header ul li {
+  list-style: none;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 0.3rem 3.2rem;
+}
+
+/*
+########################################
+                  Main
+########################################
+*/
+
+main h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 8rem 0 4rem 0;
+}
+
+.title-img {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.first {
+  display: flex;
+  margin-bottom: 15rem;
+}
+
+.first article:first-of-type {
+  width: 55%;
+  margin-right: 5rem;
+}
+
+.first article:first-of-type p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.first article:nth-of-type(2) p:first-of-type {
+  font-size: 5rem;
+}
+
+.first article:nth-of-type(2) p:last-of-type {
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.second {
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.second figure {
+  width: 60%;
+}
+
+.second figure img {
+  width: 80%;
+}
+
+.second article {
+  width: 42%;
+}
+
+.second article h3 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.second article h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.second article p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.third {
+  display: flex;
+  background: hsl(218, 4%, 94%);
+}
+
+.third article {
+  width: 50%;
+}
+
+.third article h3 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.third article ol {
+  font-size: 1.5rem;
+  margin-left: 4rem;
+}
+
+.third article p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.third figure {
+  width: 70%;
+}
+
+.third figure img {
+  width: 80%;
+}
+
+.fourth {
+  text-align: center;
+  position: relative;
+}
+
+.fourth h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.fourth p:first-of-type {
+  width: 42%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 auto;
+}
+
+.fourth p:last-of-type {
+  width: 25%;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: start;
+  margin-left: 28rem;
+  margin-bottom: 15rem;
+}
+
+.fourth figure {
+  margin-top: 10rem;
+}
+
+.fourth figure img {
+  width: 100%;
+}
+
+.skater {
+  width: 40%;
+  position: absolute;
+  bottom: -5rem;
+}
+
+/*
+########################################
+                  Footer
+########################################
+*/
+
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+footer p::before {
+  content: url(../img/costume_guy.png);
+}

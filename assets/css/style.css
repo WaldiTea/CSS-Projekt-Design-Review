@@ -98,108 +98,111 @@ header ul li {
 ########################################
 */
 
+/*---------- title ----------*/
+
 main h2 {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   text-align: center;
   margin: 8rem 0 4rem 0;
 }
 
 .title-img {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 10rem;
 }
+
+/*---------- first ----------*/
 
 .first {
   display: flex;
   margin-bottom: 15rem;
 }
 
-.first article:first-of-type {
-  width: 55%;
-  margin-right: 5rem;
+.first .article-one {
+  width: 50rem;
+  flex-grow: 1;
 }
 
-.first article:first-of-type p {
-  font-size: 1.5rem;
+.first .article-one p {
+  font-size: 1.75rem;
   line-height: 1.5em;
 }
 
-.first article:nth-of-type(2) p:first-of-type {
+.first .article-two {
+  flex-grow: 1;
+  margin-left: 5rem;
+}
+
+.first .article-two p:first-of-type {
   font-size: 5rem;
 }
 
-.first article:nth-of-type(2) p:last-of-type {
-  width: 80%;
+.first .article-two p:last-of-type {
+  width: 15rem;
   color: #848689;
   font-size: 1.5rem;
 }
 
+/*---------- second ----------*/
+
 .second {
+  height: 50rem;
   display: flex;
-  margin-bottom: 10rem;
+  justify-content: space-between;
+  margin-bottom: 15rem;
 }
 
-.second figure {
-  width: 60%;
+.second-article {
+  width: 49%;
 }
 
-.second figure img {
-  width: 80%;
-}
-
-.second article {
-  width: 42%;
-}
-
-.second article h3 {
+.second .article-title {
   font-size: 5rem;
   margin-bottom: 5rem;
 }
 
-.second article h4 {
+.second .article-subtitle {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-.second article p {
+.second .article-text {
   color: #848689;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 4rem 3rem;
 }
+
+/*---------- third ----------*/
 
 .third {
-  display: flex;
+  height: 44rem;
   background: hsl(218, 4%, 94%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
 }
 
-.third article {
+.third-article {
   width: 50%;
+  align-self: center;
 }
 
-.third article h3 {
+.third .article-title {
   font-size: 5rem;
   margin-bottom: 1rem;
 }
 
-.third article ol {
-  color: #848689;
-  font-size: 1.5rem;
+.article-list {
   margin-left: 4rem;
 }
 
-.third article p {
+.third .article-text {
   color: #848689;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.third figure {
-  width: 70%;
-}
-
-.third figure img {
-  width: 80%;
-}
+/*---------- fourth ----------*/
 
 .fourth {
   text-align: center;
@@ -240,8 +243,9 @@ main h2 {
 }
 
 .skater {
-  width: 40%;
+  width: 42%;
   position: absolute;
+  right: 9.5rem;
   bottom: -5rem;
 }
 
